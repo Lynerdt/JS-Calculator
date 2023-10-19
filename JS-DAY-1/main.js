@@ -1,17 +1,19 @@
 let inputBox = document.getElementById('inputbox')
-let buttons = document.querySelectorAll('button')
-
+let buttons = document.querySelectorAll('numbers')
+console.log(buttons)
 
 let string = ''
 
 buttons.forEach(element =>{
-element.addEventListener('click', (b)=>{
-  if(b.target.innerText == '='){
+element.addEventListener('click', (e)=>{
+  if(e.target.innerText == '='){
       string = String(eval(string))
       inputBox.value = string;
   }
+
   else{
-string += b.target.innerText
+string += e.target.innerText
+
 inputBox.value = string
 
 
