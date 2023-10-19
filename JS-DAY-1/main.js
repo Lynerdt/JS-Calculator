@@ -1,5 +1,5 @@
-let inputBox = document.getElementById('inputbox')
-let buttons = document.querySelectorAll('numbers')
+const inputBox = document.getElementById('inputbox')
+const buttons = document.querySelectorAll(".numbers")
 console.log(buttons)
 
 let string = ''
@@ -14,7 +14,7 @@ element.addEventListener('click', (e)=>{
   else{
 string += e.target.innerText
 
-inputBox.value = string
+inputBox = string
 
 
 
